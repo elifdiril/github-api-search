@@ -24,7 +24,7 @@ const MainPage = () => {
 
   //get search input from local storage
   const [searchInput, setSearchInput] = useState(
-    localStorage.getItem("searchInput")
+    localStorage.getItem("searchInput") ? localStorage.getItem("searchInput") : ""
   );
 
   useEffect(() => {
