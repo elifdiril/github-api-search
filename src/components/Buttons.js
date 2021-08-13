@@ -6,14 +6,14 @@ const Buttons = ({ selectedButton, setSelectedButton }) => {
     <div className="buttons">
       <input
         type="radio"
-        id="js"
+        id="javascript"
         name="programming_language"
-        value="js"
-        onClick={() => setSelectedButton("js")}
-        checked={selectedButton === "js"}
+        value="javascript"
+        onClick={() => setSelectedButton("javascript")}
+        checked={selectedButton === "javascript"}
         readOnly
       />
-        <label for="js">Javascript</label>
+        <label for="javascript">Javascript</label>
       <br />
       <input
         type="radio"
@@ -28,14 +28,14 @@ const Buttons = ({ selectedButton, setSelectedButton }) => {
       <br />
       <input
         type="radio"
-        id="py"
+        id="python"
         name="programming_language"
-        value="py"
-        onClick={() => setSelectedButton("py")}
-        checked={selectedButton === "py"}
+        value="python"
+        onClick={() => setSelectedButton("python")}
+        checked={selectedButton === "python"}
         readOnly
       />{" "}
-      <label for="py">Python</label>
+      <label for="python">Python</label>
     </div>
   );
 };

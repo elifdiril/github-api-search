@@ -11,28 +11,25 @@ const Table = ({ product }) => {
   return (
     <div className="bTable">
       <BootstrapTable data={product} options={options} pagination>
-        <TableHeaderColumn dataField="id" isKey width="14%">
+        <TableHeaderColumn dataField="id" isKey width="10%">
           Repository Id
         </TableHeaderColumn>
-        <TableHeaderColumn dataField="username" width="14%">
+        <TableHeaderColumn dataField="name" width="10%">
           Username
         </TableHeaderColumn>
-        <TableHeaderColumn dataField="repo" width="14%">
-          Repo
-        </TableHeaderColumn>
-        <TableHeaderColumn dataField="description" width="14%">
+        <TableHeaderColumn dataField="description" width="35%">
           Description
         </TableHeaderColumn>
-        <TableHeaderColumn dataField="stars" dataSort={true} width="14%">
+        <TableHeaderColumn dataField="stargazers_count" dataSort={true} width="15%">
           Stars
         </TableHeaderColumn>
-        <TableHeaderColumn dataField="forks" dataSort={true} width="14%">
+        <TableHeaderColumn dataField="forks_count" dataSort={true} width="15%">
           Forks
         </TableHeaderColumn>
         <TableHeaderColumn
-          dataField="lastUpdateDate"
+          dataField="updated_at"
           dataSort={true}
-          width="14%"
+          width="15%"
         >
           Last Update Date
         </TableHeaderColumn>
